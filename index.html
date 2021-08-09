@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- navigation baar -->
+        <div class="head">
+            <div class="name">
+                <h3>Akash</h3>
+            </div>
+            <div class="navbar">
+                <ul id="menuList">
+                    <li><a href="#abt">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Other</a></li>
+
+                </ul>
+            </div>
+            <img src="./images/bar icon.png" alt=" menuicon" class="menuicon" onclick="togglemenu()" />
+
+        </div>
+        <!-- navigation end -->
+
+        <!-- under -->
+        <div class="main">
+            <div class="card1">
+
+                <h1> Hi,<br>
+                    I am <span style="color:#000033;">Akash</span> <br>
+                    a Web Developer</h1>
+
+
+                <a href="#contact" > <div class="btn"> contact </div></a>
+
+                <div class="ico">
+                    <a href=""><img src="./images/in.png" alt=""></a>
+                    <a href=""><img src="./images/git.png" alt=""></a>
+                    <a href=""><img src="./images/twee.png" alt=""></a>
+                </div>
+
+            </div>
+            <div class="card2"> <img src="./images/man2.png" alt=" photo"></div>
+        </div>
+
+        <!-- about part -->
+        <div id="abt" class="about">
+            <h2>About</h2>
+            <!-- <div class="cover"> -->
+            
+
+                <div class="info">
+                    <div class="para">
+                <h3> I am akash</h3>
+
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis explicabo voluptatem
+                            maiores ab. Id
+                            iure itaque minima culpa quisquam eos. Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Expedita,
+                            porro!</p>
+                    </div>
+                    <img src="./images/man2.png" alt="">
+                </div>
+
+                
+            <!-- </div> -->
+        </div>
+        <!-- work project -->
+        <div class="wrap">
+            <div class="tital">
+                <h2 id="work">These are some of my project</h2>
+            </div>
+            <div class="section2">
+                <a href="https://ahingole.github.io/restaurent/"><span class="code">      project-restaurant</span>   <img src="./images/resto.jpg" alt=""></a>
+                <a href="https://ahingole.github.io/photo-gallery/"> project -phtogallary <img src="./images/photo.jpg" alt="" class="box2"></a>
+                <a href=" https://ahingole.github.io/landingpg/"> project-landing-pg <img src="./images/landing.jpg" alt="" class="box3"></a>
+                <a href=" https://ahingole.github.io/landingpg/"> project-responsive <img src="./images/reponsive.jpg" alt="" class=""></a>
+                <a href=" https://ahingole.github.io/music-site/"> project-music <img src="./images/headphone (1) - Copy.jpg" alt="" class=""></a>
+
+                <a href="https://ahingole.github.io/tribute/"> project-tribute <img src="./images/tribu.jpg" alt=""></a>
+                <a href=" https://ahingole.github.io/styledoc/"> project-styledoc <img src="./images/styledoc.jpg" alt=""></a>
+                <a href=" https://ahingole.github.io/parallax/"> project-parallax <img src="./images/parallax.jpg" alt=""></a>
+                <a href="https://ahingole.github.io/application-forms/"> project app-form <img src="./images/form.png" alt=""></a>
+                <a href="https://github.com/ahingole/layout-types.git"> project-layouts<img src="./images/layouts.jpg" alt=""></a>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <footer>   
+            <h3> get in touch</h3>
+            <p>  contact </p>
+            <p>  email: <strong> akash.devstag@gmail.com</strong></p>
+            <p>Phone:<strong> (+91) 7028324109</strong></p>
+        </footer>
+    
+    </div>
+
+    </div>
+
+    <!-- javascript used -->
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
